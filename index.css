@@ -1,31 +1,71 @@
-html,
+@import url("reset.css");
+li {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
   height: 100%;
+  width: 100%;
+  background-color: rgb(48, 48, 48);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
+
+.clock {
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: bolder;
+  padding-bottom: 80px;
+}
+
+.form {
+  display: none;
+}
+
+.greeting-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.greetings {
+  display: none;
+}
 .btn {
-  cursor: pointer;
+  display: none;
 }
-
-.clockContainer {
-  background-color: white;
-  color: black;
-  padding: 20px;
-}
-
-.dark {
-  background-color: black;
-  color: blanchedalmond;
-}
-
 .showing {
   display: block;
 }
 
-.greeting {
-  display: none;
+.todolist {
+  padding: 0px;
 }

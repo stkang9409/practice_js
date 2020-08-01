@@ -7,13 +7,23 @@
     <link rel="stylesheet" href="index.css" type="text/css" />
   </head>
   <body>
-    <div class="js-clock">
-      <h1 class="btn"></h1>
+    <div class="js-clock clock">
+      <h1>00:00</h1>
     </div>
-    <script src="index.js"></script>
-    <form class="form">
-      <input type="text" placeholder="이름을 입력하세요" class="js-greeting" />
+    <form class="js-form form showing">
+      <input type="text" placeholder="안녕, 너의 이름은?" />
     </form>
-    <h1 class="js-greeting"></h1>
+    <div class="greeting-container">
+      <h4 class="js-greetings greetings"></h4>
+      <button class="btn">삭제</button>
+    </div>
+    <form class="js-todo todo">
+      <input type="text" placeholder="이번 주에 뭐하지" />
+    </form>
+    <ul class="js-todolist todolist"></ul>
+    <script src="clock.js"></script>
+    <script src="greeting.js"></script>
+    <script src="todo.js"></script>
+    <script src="randompicture.js"></script>
   </body>
 </html>

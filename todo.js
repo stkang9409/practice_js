@@ -6,13 +6,6 @@ const TODOS_LS = "toDos";
 
 let toDos = [];
 
-function changeId(list) {
-  for (var i = 0; i < list.length + 1; i++) {
-    list[i].id = i + 1;
-  }
-  return list;
-}
-
 function deleteToDo(event) {
   const btn = event.target;
   const li = btn.parentNode;
